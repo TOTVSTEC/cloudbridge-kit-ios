@@ -62,20 +62,21 @@ class InstallTask {
     var kitSrc = path.join(__dirname, 'src'),
         projectSrc = path.join(this.projectDir, 'src'),
         tempFolder = path.join(os.tmpdir(), 'cloudbridge-' + new Date().getTime()),
-        packagePath = path.join.apply(path, this.projectData.id.split('.')),
+        //packagePath = path.join.apply(path, this.projectData.id.split('.')),
         objcDir = path.join(tempFolder, 'src', 'ios', 'objc'),
+        packagePath = objcDir,
         packageDir = path.join(objcDir, packagePath);
 
     shelljs.mkdir('-p', packageDir);
     shelljs.cp('-Rf', kitSrc, tempFolder);
 
-    var files = shelljs.ls(path.join(javaDir, '*.java'));
+    // var files = shelljs.ls(path.join(objcDir, '*.mm'));
 
-    for (var i = 0; i < files.length; i++) {
-      var targetFile = path.join(packageDir, this.projectData.name + path.basename(files[i]));
+    // for (var i = 0; i < files.length; i++) {
+    //   var targetFile = path.join(packageDir, this.projectData.name + path.basename(files[i]));
 
-      shelljs.mv('-f', files[i], targetFile);
-    }
+    //   shelljs.mv('-f', files[i], targetFile);
+    // }
 
     utils.copyTemplate(tempFolder, this.projectDir, {
       project: this.projectData
@@ -86,7 +87,7 @@ class InstallTask {
 
   checkForExistingFiles() {
     var deferred = Q.defer(),
-        targetPath = path.join(this.projectDir, 'src', 'android');
+        targetPath = path.join(this.projectDir, 'src', 'ios');
 
     if (fs.existsSync(targetPath)) {
       inquirer.prompt([{
