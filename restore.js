@@ -41,7 +41,6 @@ function copyDependencies() {
   util_ = cli.require('util');
   exec = cli.require('child_process').exec;
   var shPath = path.join(libPath, 'createlib.sh');
-  shellsh = exec(shPath, function(error,stdout,stderr) {
-    if (error) console.log(error);
-  });
+  shelljs.chmod('+x',shPath);
+  shelljs.exec(shPath);
 }
