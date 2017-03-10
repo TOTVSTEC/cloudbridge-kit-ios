@@ -69,7 +69,6 @@ class InstallTask {
 
     shelljs.mkdir('-p', packageDir);
     shelljs.cp('-Rf', kitSrc, tempFolder);
-
     // var files = shelljs.ls(path.join(objcDir, '*.mm'));
 
     // for (var i = 0; i < files.length; i++) {
@@ -80,8 +79,9 @@ class InstallTask {
 
     utils.copyTemplate(tempFolder, this.projectDir, {
       project: this.projectData
-    }, /\.(xcodeproj|plist|mm)/);
-
+    }, /\.(pbxproj|plist|mm)/);
+    shelljs.mv( path.join(projectSrc,'ios','cloudbridgeapp.xcodeproj'),path.join(projectSrc,'ios',this.projectData.name + '.xcodeproj') );
+    
     shelljs.rm('-rf', tempFolder);
   }
 
