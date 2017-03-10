@@ -371,6 +371,7 @@
 					"-u",
 					_qt_registerPlatformPlugin,
 					"-Wl,-e,_qt_main_wrapper",
+					"-L../../build/ios/libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = <%= project.id %>;
 				PRODUCT_NAME = "$(TARGET_NAME)";
