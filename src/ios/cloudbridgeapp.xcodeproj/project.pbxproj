@@ -62,7 +62,7 @@
 		2D5AC2341E5DFF2C002AC353 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D5AC2361E5DFF4B002AC353 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		2D5AC2381E5DFF5C002AC353 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		2DB8D6AA1E68558A00BACD57 /* cbapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = <%= project.name %>.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB8D6AA1E68558A00BACD57 /* <%= project.name %>.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = <%= project.name %>.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB8D6AF1E685F3400BACD57 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = objc/main.mm; sourceTree = "<group>"; };
 		2DB8D6B21E68604B00BACD57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = objc/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -106,13 +106,13 @@
 			children = (
 				2DB8D6AF1E685F3400BACD57 /* main.mm */,
 				2D5AC2321E5DFB5C002AC353 /* assets */,
-				2D1FCA4D1E578C9700D8AB73 /* cloudbridgeapp */,
+				2D1FCA4D1E578C9700D8AB73 /* <%= project.name %> */,
 				2D1FCA651E578CE000D8AB73 /* Frameworks */,
-				2DB8D6AA1E68558A00BACD57 /* cbapp.app */,
+				2DB8D6AA1E68558A00BACD57 /* <%= project.name %>.app */,
 			);
 			sourceTree = "<group>";
 		};
-		2D1FCA4D1E578C9700D8AB73 /* cloudbridgeapp */ = {
+		2D1FCA4D1E578C9700D8AB73 /* <%= project.name %> */ = {
 			isa = PBXGroup;
 			children = (
 				2DB8D6B21E68604B00BACD57 /* Assets.xcassets */,
@@ -163,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D1FCA4A1E578C9700D8AB73 /* cbapp */ = {
+		2D1FCA4A1E578C9700D8AB73 /* <%= project.name %> */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D1FCA621E578C9700D8AB73 /* Build configuration list for PBXNativeTarget "cbapp" */;
+			buildConfigurationList = 2D1FCA621E578C9700D8AB73 /* Build configuration list for PBXNativeTarget "<%= project.name %>" */;
 			buildPhases = (
 				2D1FCA471E578C9700D8AB73 /* Sources */,
 				2D1FCA481E578C9700D8AB73 /* Frameworks */,
@@ -177,7 +177,7 @@
 			);
 			name = <%= project.name %>;
 			productName = <%= project.name %>;
-			productReference = 2DB8D6AA1E68558A00BACD57 /* cbapp.app */;
+			productReference = 2DB8D6AA1E68558A00BACD57 /* <%= project.name %>.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -196,7 +196,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D1FCA461E578C9700D8AB73 /* Build configuration list for PBXProject "cloudbridgeapp" */;
+			buildConfigurationList = 2D1FCA461E578C9700D8AB73 /* Build configuration list for PBXProject "<%= project.name %>" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -209,7 +209,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D1FCA4A1E578C9700D8AB73 /* cbapp */,
+				2D1FCA4A1E578C9700D8AB73 /* <%= project.name %> */,
 			);
 		};
 /* End PBXProject section */
@@ -381,7 +381,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D1FCA461E578C9700D8AB73 /* Build configuration list for PBXProject "cloudbridgeapp" */ = {
+		2D1FCA461E578C9700D8AB73 /* Build configuration list for PBXProject "<%= project.name %>" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D1FCA601E578C9700D8AB73 /* Debug */,
@@ -390,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D1FCA621E578C9700D8AB73 /* Build configuration list for PBXNativeTarget "cbapp" */ = {
+		2D1FCA621E578C9700D8AB73 /* Build configuration list for PBXNativeTarget "<%= project.name %>" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D1FCA631E578C9700D8AB73 /* Debug */,

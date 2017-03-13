@@ -5,7 +5,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>
-	<string>cbapp</string>
+  <string><%= project.name %></string>
 	<key>CFBundleGetInfoString</key>
 	<string>Created by Totvs S.A.</string>
 	<key>CFBundleIdentifier</key>
