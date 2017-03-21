@@ -1,4 +1,4 @@
-ar task = module.exports,
+var task = module.exports,
    Q = null;
 
 task.run = function run(cli, targetPath, projectData) {
