@@ -20,7 +20,6 @@
 		2D1FCA831E578DA000D8AB73 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FCA721E578DA000D8AB73 /* EventKit.framework */; };
 		2D1FCA841E578DA000D8AB73 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FCA731E578DA000D8AB73 /* EventKitUI.framework */; };
 		2D1FCA851E578DA000D8AB73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FCA741E578DA000D8AB73 /* Foundation.framework */; };
-		2D1FCA861E578DA000D8AB73 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FCA751E578DA000D8AB73 /* NetworkExtension.framework */; };
 		2D1FCA871E578DA000D8AB73 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FCA761E578DA000D8AB73 /* PhotosUI.framework */; };
 		2D1FCA881E578DA000D8AB73 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FCA771E578DA000D8AB73 /* QuartzCore.framework */; };
 		2D1FCA891E578DA000D8AB73 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1FCA781E578DA000D8AB73 /* WebKit.framework */; };
@@ -52,7 +51,6 @@
 		2D1FCA721E578DA000D8AB73 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		2D1FCA731E578DA000D8AB73 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		2D1FCA741E578DA000D8AB73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2D1FCA751E578DA000D8AB73 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		2D1FCA761E578DA000D8AB73 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		2D1FCA771E578DA000D8AB73 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2D1FCA781E578DA000D8AB73 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -91,7 +89,6 @@
 				2D1FCA831E578DA000D8AB73 /* EventKit.framework in Frameworks */,
 				2D1FCA841E578DA000D8AB73 /* EventKitUI.framework in Frameworks */,
 				2D1FCA851E578DA000D8AB73 /* Foundation.framework in Frameworks */,
-				2D1FCA861E578DA000D8AB73 /* NetworkExtension.framework in Frameworks */,
 				2D1FCA871E578DA000D8AB73 /* PhotosUI.framework in Frameworks */,
 				2D1FCA881E578DA000D8AB73 /* QuartzCore.framework in Frameworks */,
 				2D1FCA891E578DA000D8AB73 /* WebKit.framework in Frameworks */,
@@ -151,7 +148,6 @@
 				2D1FCA721E578DA000D8AB73 /* EventKit.framework */,
 				2D1FCA731E578DA000D8AB73 /* EventKitUI.framework */,
 				2D1FCA741E578DA000D8AB73 /* Foundation.framework */,
-				2D1FCA751E578DA000D8AB73 /* NetworkExtension.framework */,
 				2D1FCA761E578DA000D8AB73 /* PhotosUI.framework */,
 				2D1FCA771E578DA000D8AB73 /* QuartzCore.framework */,
 				2D1FCA781E578DA000D8AB73 /* WebKit.framework */,
@@ -193,6 +189,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 53Y49Z97XN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.VPNLite = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
